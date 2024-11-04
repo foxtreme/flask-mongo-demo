@@ -1,4 +1,4 @@
-# djangorest-mongo-demo
+# flask-mongo-demo
 
 This demo project showcases a simple rest api using django rest framework connected to a mongo db comprised of:
 
