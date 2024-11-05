@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "050f67f3-de40-48b5-b5ca-032b757ac2b0",
+		"name": "FlaskMongo Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3012062"
+	},
+	"item": [
+		{
+			"name": "GET rooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/rooms/67299da12e31a5c974f1c30b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rooms",
+						"67299da12e31a5c974f1c30b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Throne Room\",\r\n  \"dimensions\": {\r\n    \"width\": 21,\r\n    \"length\": 15,\r\n    \"height\": 4\r\n  },\r\n  \"hostile\": true,\r\n  \"enemies\": [\r\n    {\r\n      \"name\": \"Igris\",\r\n      \"level\": 6,\r\n      \"type\": \"knight\"\r\n    }\r\n  ],\r\n  \"treasure\": [\r\n    \"necromancy rune stone\",\r\n    \"600po\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Throne Room\",\r\n  \"dimensions\": {\r\n    \"width\": 21,\r\n    \"length\": 15,\r\n    \"height\": 14\r\n  },\r\n  \"hostile\": true,\r\n  \"enemies\": [\r\n    {\r\n      \"name\": \"Igris\",\r\n      \"level\": 6,\r\n      \"type\": \"knight\"\r\n    }\r\n  ],\r\n  \"treasure\": [\r\n    \"necromancy rune stone\",\r\n    \"600po\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/rooms/67299da12e31a5c974f1c30b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rooms",
+						"67299da12e31a5c974f1c30b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/rooms/67299da12e31a5c974f1c30b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rooms",
+						"67299da12e31a5c974f1c30b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
